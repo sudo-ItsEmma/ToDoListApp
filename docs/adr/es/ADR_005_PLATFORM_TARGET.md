@@ -2,7 +2,7 @@
 title: "ADR-005: Plataforma objetivo"
 category: adr
 lang: es
-version: 1.0
+version: 1.1
 last_updated: 2026-09-20
 audience: architect
 related:
@@ -11,7 +11,7 @@ related:
 
 # ADR-005: Plataforma objetivo
 
-*La app apunta a iPhone y iPad, con iOS 26 como versión mínima y Swift 6.2 o posterior.*
+*La app apunta solo a iPhone, con iOS 26 como versión mínima y Swift 6.2 o posterior.*
 
 ## Tabla de contenido
 
@@ -35,7 +35,7 @@ El proyecto es de aprendizaje y portafolio. La skill instalada `swiftui-pro` asu
 
 ## Decisión
 
-- Dispositivo: **iPhone y iPad** (decisión del dueño del producto, 2026-09-20; sustituye a "solo iPhone").
+- Dispositivo: **solo iPhone**. La app nunca se pensó para iPad (decisión del dueño del producto; corrige el registro del 2026-09-20 que hablaba de iPhone y iPad).
 - Idioma: **solo español**, incluidos textos, fechas y horas.
 - Versión mínima: **iOS 26**.
 - Lenguaje: **Swift 6.2 o posterior** con concurrencia moderna.
@@ -52,18 +52,17 @@ El proyecto es de aprendizaje y portafolio. La skill instalada `swiftui-pro` asu
 ### Negativas
 
 - Excluye dispositivos que no pueden ejecutar iOS 26.
-- Hay que revisar que cada pantalla se vea bien en iPad (ancho regular, orientaciones, teclado y ratón).
+- No hay diseño adaptable para iPad: si se instala en uno, corre en el modo de compatibilidad de iPhone.
 
 ### Riesgos
 
-- No hay simulador de iPad instalado en el entorno actual; hay que instalar uno para verificar el diseño.
 - Versiones de herramientas: la versión exacta de Xcode se decide al definir el entorno de desarrollo y requiere la aprobación del dueño del producto.
 
 ## Alternativas consideradas
 
-### Solo iPhone
+### iPhone y iPad
 
-Era la decisión inicial, para evitar trabajo de diseño adaptable en el MVP. Se descartó porque el dueño del producto quiere que la app funcione también en iPad.
+Se registró el 2026-09-20 y se revirtió: el dueño del producto no quiere la app en iPad. Solo iPhone además evita el trabajo de diseño adaptable (ancho regular, orientaciones, teclado y ratón).
 
 ### iOS 18 como mínimo
 

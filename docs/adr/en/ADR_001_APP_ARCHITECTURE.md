@@ -32,7 +32,7 @@ Proposed
 
 ## Context
 
-The app is a local-only to-do list for iPhone and iPad. The goals are learning and portfolio quality, so clarity and modern practices matter more than layering. The MVP has one entity (`TodoItem`), a single task view, and local reminders.
+The app is a local-only to-do list for iPhone. The goals are learning and portfolio quality, so clarity and modern practices matter more than layering. The MVP has one entity (`TodoItem`), a single task view, and local reminders.
 
 ## Decision
 

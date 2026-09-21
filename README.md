@@ -1,6 +1,6 @@
 # ToDoListApp
 
-App de lista de tareas para iPhone y iPad, hecha con SwiftUI y SwiftData. Toda la interfaz está en español y los datos se guardan solo en el dispositivo, sin cuentas ni servidor.
+App de lista de tareas para iPhone, hecha con SwiftUI y SwiftData. Toda la interfaz está en español y los datos se guardan solo en el dispositivo, sin cuentas ni servidor.
 
 Es un proyecto de aprendizaje y portafolio, construido en micro-pasos pequeños y revisables, con las decisiones de arquitectura documentadas en ADRs.
 
@@ -21,7 +21,7 @@ Es un proyecto de aprendizaje y portafolio, construido en micro-pasos pequeños 
 | Persistencia | SwiftData, una sola entidad (`TodoItem`) |
 | Notificaciones | `UserNotifications`, notificaciones locales |
 | Pruebas | Swift Testing para la lógica, XCTest para la interfaz |
-| Plataformas | iOS 26 o posterior, iPhone y iPad |
+| Plataformas | iOS 26 o posterior, solo iPhone |
 | Dependencias | Ninguna de terceros |
 
 ## Cómo ejecutarla
@@ -68,7 +68,7 @@ Las decisiones importantes están registradas como ADRs, en español e inglés, 
 | 002 | Persistencia local con SwiftData |
 | 003 | Vista única con secciones automáticas y vista de Completadas |
 | 004 | Recordatorios locales con un único servicio que programa y cancela |
-| 005 | Plataforma: iPhone y iPad, iOS 26 o posterior |
+| 005 | Plataforma: solo iPhone, iOS 26 o posterior |
 
 ## Fuera del alcance
 
@@ -80,4 +80,4 @@ Distribuido bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE).
 
 ## Estado
 
-Las cuatro funcionalidades del MVP están construidas y probadas en el simulador. Pendiente: revisar el diseño en iPad y probar los recordatorios en un iPhone físico.
+Las cuatro funcionalidades del MVP están construidas y probadas en el simulador. Pendiente: probar los recordatorios en un iPhone físico.

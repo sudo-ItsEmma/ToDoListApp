@@ -32,7 +32,7 @@ Propuesto
 
 ## Contexto
 
-La app es una lista de tareas solo local para iPhone y iPad. Los objetivos son aprendizaje y calidad de portafolio, así que pesan más la claridad y las prácticas modernas que las capas. El MVP tiene una entidad (`TodoItem`), una vista única de tareas y recordatorios locales.
+La app es una lista de tareas solo local para iPhone. Los objetivos son aprendizaje y calidad de portafolio, así que pesan más la claridad y las prácticas modernas que las capas. El MVP tiene una entidad (`TodoItem`), una vista única de tareas y recordatorios locales.
 
 ## Decisión
 

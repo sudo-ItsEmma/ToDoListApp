@@ -2,7 +2,7 @@
 title: "ADR-005: Platform Target"
 category: adr
 lang: en
-version: 1.0
+version: 1.1
 last_updated: 2026-09-20
 audience: architect
 related:
@@ -11,7 +11,7 @@ related:
 
 # ADR-005: Platform Target
 
-*The app targets iPhone and iPad, with iOS 26 as the minimum version and Swift 6.2 or later.*
+*The app targets iPhone only, with iOS 26 as the minimum version and Swift 6.2 or later.*
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ The project is for learning and portfolio use. The installed `swiftui-pro` skill
 
 ## Decision
 
-- Device: **iPhone and iPad** (product owner decision, 2026-09-20; replaces "iPhone only").
+- Device: **iPhone only**. The app was never meant for iPad (product owner decision; corrects the 2026-09-20 record that said iPhone and iPad).
 - Language: **Spanish only**, including text, dates and times.
 - Minimum version: **iOS 26**.
 - Language: **Swift 6.2 or later** with modern concurrency.
@@ -52,18 +52,17 @@ The project is for learning and portfolio use. The installed `swiftui-pro` skill
 ### Negative
 
 - Excludes devices that cannot run iOS 26.
-- Every screen must be checked on iPad (regular width, orientations, keyboard and pointer).
+- There is no adaptive iPad layout: if installed on one, the app runs in iPhone compatibility mode.
 
 ### Risks
 
-- No iPad simulator is installed in the current environment; one must be installed to verify the layout.
 - Tooling versions: the exact Xcode version is decided when the development environment is defined, and needs the product owner's approval.
 
 ## Alternatives Considered
 
-### iPhone only
+### iPhone and iPad
 
-The initial decision, to avoid adaptive layout work in the MVP. Discarded because the product owner wants the app to work on iPad as well.
+Recorded on 2026-09-20 and reverted: the product owner does not want the app on iPad. iPhone only also avoids the adaptive layout work (regular width, orientations, keyboard and pointer).
 
 ### iOS 18 minimum
 
