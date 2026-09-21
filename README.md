@@ -74,6 +74,10 @@ Las decisiones importantes están registradas como ADRs, en español e inglés, 
 
 Listas, etiquetas, subtareas, búsqueda, recurrencia, varios recordatorios por tarea, reordenar a mano, widgets, Siri e iCloud.
 
+## Licencia
+
+Distribuido bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE).
+
 ## Estado
 
 Las cuatro funcionalidades del MVP están construidas y probadas en el simulador. Pendiente: revisar el diseño en iPad y probar los recordatorios en un iPhone físico.
