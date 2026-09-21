@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode: datos de usuario y de compilación
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+.build/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.resolved
+
+# Secretos y configuración local (por si se añaden después)
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.pem
+*.key
+Secrets.xcconfig
+Local.xcconfig
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Herramientas de Claude Code de uso local
+.claude/
