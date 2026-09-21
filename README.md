@@ -80,4 +80,4 @@ Distribuido bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE).
 
 ## Estado
 
-Las cuatro funcionalidades del MVP están construidas y probadas en el simulador. Pendiente: probar los recordatorios en un iPhone físico.
+Las cuatro funcionalidades del MVP están construidas y probadas en el simulador y en un iPhone físico. En el dispositivo se comprobó que las notificaciones suenan con el teléfono bloqueado y con la app cerrada del todo, y que la vibración al completar y reabrir se siente.

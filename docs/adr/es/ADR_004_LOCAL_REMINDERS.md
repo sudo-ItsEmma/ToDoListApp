@@ -2,7 +2,7 @@
 title: "ADR-004: Recordatorios locales"
 category: adr
 lang: es
-version: 1.1
+version: 1.2
 last_updated: 2026-09-20
 audience: architect
 related:
@@ -28,7 +28,7 @@ related:
 
 ## Estado
 
-Aceptado (2026-09-20). Implementado en la funcionalidad 4 y probado en el simulador; falta probarlo en un iPhone físico.
+Aceptado (2026-09-20). Implementado en la funcionalidad 4 y probado en el simulador y en un iPhone físico, con el teléfono bloqueado y con la app cerrada.
 
 ## Contexto
 

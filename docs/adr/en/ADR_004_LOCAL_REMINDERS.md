@@ -2,7 +2,7 @@
 title: "ADR-004: Local Reminders"
 category: adr
 lang: en
-version: 1.1
+version: 1.2
 last_updated: 2026-09-20
 audience: architect
 related:
@@ -28,7 +28,7 @@ related:
 
 ## Status
 
-Accepted (2026-09-20). Implemented in feature 4 and tested in the simulator; still to be tested on a physical iPhone.
+Accepted (2026-09-20). Implemented in feature 4 and tested in the simulator and on a physical iPhone, with the phone locked and with the app fully closed.
 
 ## Context
 
