@@ -27,6 +27,7 @@
 		73C0CAD430608B0B00501348 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0CAE330608B0E00501348 /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C0CAED30608B0E00501348 /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C0CB0130608B1100501348 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		73C0CACB30608B0B00501348 = {
 			isa = PBXGroup;
 			children = (
+				73C0CB0130608B1100501348 /* Config.xcconfig */,
 				73C0CAD630608B0B00501348 /* ToDoListApp */,
 				73C0CAE630608B0E00501348 /* ToDoListAppTests */,
 				73C0CAF030608B0E00501348 /* ToDoListAppUITests */,
@@ -271,6 +273,7 @@
 /* Begin XCBuildConfiguration section */
 		73C0CAF530608B0E00501348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C0CB0130608B1100501348 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +337,7 @@
 		};
 		73C0CAF630608B0E00501348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C0CB0130608B1100501348 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -407,7 +411,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -438,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -459,7 +463,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -480,7 +484,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -499,7 +503,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -518,7 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ToDoListAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID_PREFIX).ToDoListAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;

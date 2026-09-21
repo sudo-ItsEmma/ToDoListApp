@@ -1,0 +1,9 @@
+// Configuración compartida del proyecto (se versiona).
+// Los valores de firma reales van en Signing.xcconfig, que NO se sube a git.
+// Cópialo desde Signing.example.xcconfig y ponle tus valores.
+
+DEVELOPMENT_TEAM =
+APP_BUNDLE_ID_PREFIX = com.example
+
+// Si existe, sustituye los valores de arriba. Si no existe, se ignora sin error.
+#include? "Signing.xcconfig"

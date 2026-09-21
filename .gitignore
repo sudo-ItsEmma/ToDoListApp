@@ -30,6 +30,7 @@ Package.resolved
 *.key
 Secrets.xcconfig
 Local.xcconfig
+Signing.xcconfig
 
 # Editores
 .vscode/

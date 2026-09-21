@@ -140,7 +140,7 @@ struct TaskFormView: View {
         }
     }
 
-    private static let logger = Logger(subsystem: "com.example.ToDoListApp", category: "Reminders")
+    private static let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "ToDoListApp", category: "Reminders")
 }
 
 #Preview {

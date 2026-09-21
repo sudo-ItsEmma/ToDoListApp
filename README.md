@@ -32,7 +32,7 @@ Necesitas **Xcode 26** o posterior.
 2. Elige un simulador de iPhone y pulsa `Command + R`.
 3. En compilaciones **Debug**, la app carga unas tareas de ejemplo la primera vez que abre con la base de datos vacía.
 
-Para ejecutarla en un dispositivo físico, en *Signing & Capabilities* cambia el **Team** y el **Bundle Identifier** por los tuyos.
+Para ejecutarla en un dispositivo físico necesitas tu propia firma. Copia `ToDoListApp/Config/Signing.example.xcconfig` como `ToDoListApp/Config/Signing.xcconfig` y pon tu **Team ID** y un prefijo de **bundle ID** propio. Ese archivo está en `.gitignore`, así que no se sube al repositorio. No elijas el equipo desde *Signing & Capabilities*: Xcode escribiría tus datos dentro del proyecto. En el simulador no hace falta nada de esto.
 
 Las notificaciones se pueden probar en el simulador: crea una tarea con fecha uno o dos minutos adelante y espera. La app muestra el banner incluso abierta.
 
@@ -48,6 +48,7 @@ La lógica pura (secciones, orden, etiquetas de fecha y regla de recordatorios) 
 .
 ├── ToDoListApp/                      Proyecto de Xcode
 │   ├── ToDoListApp.xcodeproj
+│   ├── Config/                       Configuración de compilación y firma (Signing.xcconfig es local)
 │   ├── ToDoListApp/                  Código de la app
 │   │   ├── Tasks/                    Modelo, vistas y reglas de las tareas
 │   │   ├── Reminders/                Regla, servicio y delegado de las notificaciones

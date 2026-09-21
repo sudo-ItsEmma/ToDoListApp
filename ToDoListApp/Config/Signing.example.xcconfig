@@ -1,0 +1,8 @@
+// Copia este archivo como Signing.xcconfig (en esta misma carpeta) y pon tus valores.
+// Signing.xcconfig está en .gitignore: nunca se sube al repositorio.
+
+// Tu Team ID de Apple (Xcode > Settings > Accounts, o developer.apple.com > Membership).
+DEVELOPMENT_TEAM = TU_TEAM_ID
+
+// Prefijo propio para los identificadores de la app y de las pruebas, por ejemplo com.tunombre.
+APP_BUNDLE_ID_PREFIX = com.tunombre
